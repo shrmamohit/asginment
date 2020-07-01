@@ -1,0 +1,172 @@
+.card{
+    &.order-list{
+        padding:0 20px;
+        margin-bottom:15px;
+        .card-header{
+            background:transparent;
+            padding:18px 0;
+            font-size:$card-header-size;
+            @extend .d-flex;
+            @extend .justify-content-between;
+            @extend .align-items-center;            
+        }
+        .card-body{
+            padding:20px 0;
+            font-size:$card-global-size;
+        } 
+        .card-footer{
+            background:none;
+            padding:0;
+            border:none;
+            @extend .d-flex;
+            @extend .justify-content-between;
+            @extend .align-items-center;  
+        }
+    }
+}
+
+/**order detail summary card**/
+.card{
+    &.order-summary{
+        border:none;
+        .card-header{
+            background:$light-orange;
+            padding:30px;
+            border-radius:0;
+            border-color:$primary;
+            @extend .d-flex;
+            @extend .justify-content-between;
+            @extend .align-items-center;
+            @media screen and (min-width:991px) and (max-width:1240px){
+                padding:20px;
+            }
+        }
+        .order-id{
+            .order-name{
+                font-size:$orderbigsize;
+                font-weight:$font-weight-strong; 
+                @media screen and (min-width:991px) and (max-width:1240px){
+                    font-size:20px;
+                }
+            }         
+        }
+        .card-body{
+            border:none;
+            // padding:30px;
+            padding:inherit;
+            @media screen and (min-width:991px) and (max-width:1240px){
+                // padding:20px;
+                padding:inherit;
+            }
+        }
+    }
+}
+
+
+/**profile section card**/
+.profile-section{
+    &.card{
+        border:none;
+        border-radius: 4px;
+        .card-header, .card-footer{
+            background:none;
+            border:none;
+            &:first-child{
+                border-radius: 4px 4px 0 0;
+            }
+            &:last-child{
+                border-radius: 0 0 4px 4px;
+            }
+        }
+        .card-body{
+            padding:1rem;
+            .title{
+                padding-bottom:5px;
+                color:#807e7e;
+                font-weight:$font-weight-strong;
+            }
+            .profile-info{
+                @extend .d-flex;
+                padding:10px 0;
+                .profile-img{
+                    width:60px;
+                    height:60px;                                                       
+                    img{
+                        max-width: 100%;
+                        @extend .rounded-circle;
+                    }
+                }
+                .profile-detail{
+                    max-width:77%;
+                    flex: 0 0 77%;
+                    padding:0 0 0 15px;
+                    .user-name{
+                        font-weight:$font-weight-bold;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        max-width: 100%;
+                        @extend .text-primary;
+                    }
+                    .user-detail{
+                      font-size:13px;  
+                      padding:5px 0;
+                    }
+                }
+            }
+        }
+    }
+    .bottom-text{
+        font-size:12px;
+        color:$nobel;
+        line-height: 20px;        
+        a{
+            text-decoration: underline;
+            font-weight:$font-weight-strong;
+        
+            &:hover{
+                text-decoration: none;
+            }
+        }
+    }
+    @media screen and (min-width:320px) and (max-width:991px){
+        display: none;
+    }
+}
+
+
+
+/**job card section card**/
+.job{
+    &.card{
+        border:none;        
+        .card-header, .card-footer{
+            background:none;
+            border:none;            
+            @extend .d-flex;
+            @extend .justify-content-between;
+            color:$gray-700;
+            &:first-child{
+                border-radius: 4px 4px 0 0;
+            }
+            &:last-child{
+                border-radius: 0 0 4px 4px;
+            }
+        }
+        .card-header{
+            // border-bottom:1px solid $card-border-color; 
+            @media screen and (min-width:320px) and (max-width:576px){
+                flex-wrap: wrap;
+            }
+        }
+
+        .card-footer{
+            border-top:1px solid $card-border-color; 
+        }
+        
+    }
+}
+        
+
+    
+

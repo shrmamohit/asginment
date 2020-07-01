@@ -1,0 +1,62 @@
+{
+  "APP_NAME": "reech",
+  "About": "About",
+  "Home": "Home",
+  "Logout": "Logout",
+  "login.title": "Login",
+  "login": "Login",
+  "forgotPassword": "Forgot password?",
+  "register": "Register",
+
+  "header": {
+    "profile": "My Profile",
+    "change_password": "Change password",
+    "logout": "Log out"
+  },
+
+  "account": {
+    "change_password": "Change Password",
+    "password": "Password",
+    "new_password": "New Password",
+    "change_pass_icon": "CHANGE PASSWORD",
+    "profile": {
+      "title": "Profile Details",
+      "name": {
+        "label": "Name",
+        "placeholder": "name"
+      },
+      "email": {
+        "label": "Username",
+        "placeholder": "email"
+      },
+      "password": {
+        "label": "Password",
+        "placeholder": "password"
+      },
+      "phone_number": {
+        "label": "Phone Number",
+        "placeholder": "phone number"
+      },
+      "website": {
+        "label": "Website",
+        "placeholder": "website"
+      },
+      "submit": {
+        "name": "Submit"
+      }
+    }
+  },
+  "login_form": {
+    "email": {
+      "label": "Username",
+      "placeholder": "email"
+    },
+    "password": {
+      "label": "Password",
+      "placeholder": "password"
+    }
+  },
+  "remember_me": "Remember Me",
+  "verify_account": "Verify account",
+  "sub_title": "Search for Digital Ads!"
+}

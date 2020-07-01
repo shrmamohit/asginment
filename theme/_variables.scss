@@ -1,0 +1,211 @@
+// Color system
+$white: #fff !default;
+$gray-100: #F6F6F5 !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #f9fafb !default;
+$gray-500: #e8ebf1 !default;
+$gray-600: #6a717c !default;
+$gray-700: #535353 !default;
+$gray-800: #343a40 !default;
+$gray-900: #32332F !default;
+$black: #000 !default;
+$grays: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$blue: #e9a936 !default;
+$indigo: #6610f2 !default;
+$purple: #6f42c1 !default;
+$pink: #e83e8c !default;
+$red: #FE6652 !default;
+$orange: #fd7e14 !default;
+$yellow: #FFD129 !default;
+$green: #38B756 !default;
+$teal: #5CD3D6 !default;
+$cyan: #17a2b8 !default;
+$heavy-metal:#32332F !default;
+$quill-gray:#DBDBD6 !default;
+$light:#e6edff;
+$light-grey:#f3f3f3;
+$light-orange:#fffcf6;
+$body-color:$light-orange !default;
+$silverchalice:#a1a0a0;
+$lightdangerbg:#f8ebe9;
+$lightdangerclr:#dd8988;
+$lightsucessbg:#e3f8e6;
+$lightsucessclr:#7ec485;
+$body-bg:#efefef;
+$nobel:#b5b5b5;
+$gallery:#efefef;
+/**
+mixing colors
+**/
+
+$colors: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$colors: map-merge( ( "blue": $blue, "indigo": $indigo, "purple": $purple, "pink": $pink, "red": $red, "orange": $orange, "yellow": $yellow, "green": $green, "teal": $teal, "cyan": $cyan, "white": $white, "gray": $gray-600, "gray-dark": $gray-800), $colors);
+
+/**
+Application colors
+**/
+
+$primary: $blue !default;
+$secondary: $gray-600 !default;
+$success: $green !default;
+$info: $cyan !default;
+$warning: $yellow !default;
+$danger: $red !default;
+$light: $gray-100 !default;
+$dark: $gray-800 !default;
+$theme-colors: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$theme-colors: map-merge( ( "primary": $primary, "secondary": $secondary, "success": $success, "info": $info, "warning": $warning, "danger": $danger, "light": $light, "dark": $dark), $theme-colors);
+
+$quick-tour-text:1rem;
+$top-bar-icon-size:1.375rem;
+$logo-font-size:1.875rem;
+
+
+/**gloabaly font size, color or family**/
+
+$font-family-sans-serif:'Roboto', sans-serif;
+$font-size-base: 0.875rem;
+$font-family-base: $font-family-sans-serif !default;
+
+/**breadcrumb**/
+
+$breadcrumb-bg:transparent !default;
+$breadcrumb-padding-y:.0 !default;
+$breadcrumb-padding-x:0 !default;
+$breadcrumb-divider-color:$blue !default;
+$breadcrumb-margin-bottom:0rem !default;
+
+
+/**input form icon color**/
+
+$formicon:#b1b1af;
+$formiconwidth:32px;
+$formiconheight:32px;
+
+
+/*heading desktop*/
+
+$h1-font-size: $font-size-base * 1.6 !default;
+$h2-font-size: $font-size-base * 1.389 !default;
+$h3-font-size: $font-size-base * 1.389 !default;
+$h4-font-size: $font-size-base * 1.111 !default;
+$h5-font-size: $font-size-base * 1.25 !default;
+$h6-font-size: $font-size-base !default;
+
+/*heading weight*/
+
+$font-weight-lighter: lighter !default;
+$font-weight-light: 300 !default;
+$font-weight-normal: 400 !default;
+$font-weight-strong: 500 !default;
+$font-weight-meduim: 600 !default;
+$font-weight-bold: 700 !default;
+$font-weight-bolder: 800 !default;
+
+
+/**
+buttons
+**/
+
+$btn-padding-x: 16px !default;
+$btn-padding-y: 5px !default;
+$btn-border-radius: 0.25em !default;
+$common-width:135px;
+$common-height:38px;
+
+/**form input**/
+
+$input-border-color: $quill-gray !default;
+$form-group-margin-bottom:1.875rem !default;
+
+
+/*top bar*/
+$navbar-header-width:260px;
+$tp-user-width:40px;
+$tp-user-height:40px;
+$profile-width:35px;
+$profile-height:35px;
+$username-width:65px;
+
+
+/**dropdown width or height**/
+$notification-dropdown-width:18rem;
+$user-dropdown-width:14rem;
+$notification-height:219px;
+
+/**text sizes**/
+
+$small-font:0.725rem;
+$xsmall-font:0.625rem;
+$meduim-font:0.825rem;
+$price-fontsize:2.143em;
+
+
+
+/*sidebar*/
+$sidebar-width:80px;
+$sidebar-submenu-font-size:0.75rem;
+$sidebar-menu-icon-size:1rem;
+$conten-l-margin:220px;
+
+
+/**login**/
+$loginWidth:800px;
+
+$form-file-focus-border-color:#e9a936;
+$form-file-focus-box-shadow:none;
+
+/**table td**/
+$table-font-size:0.875rem;
+$table-b-color:#f2f2f2;
+
+/**order card***/
+$card-border-radius:4px;
+$card-border-color:#f0f0f0;
+$card-cap-color:#535353;
+$card-header-size:18px;
+$card-color:#535353;
+$card-global-size:15px;
+$orderbigsize:25px;
+
+$jobcard-footersize:0.875em;
+
+/**writer container width**/
+$writer-cont-width:1300px;
+
+/**list group border color**/
+$listgroup-b-clr:#f2f2f2;
+
+/*pagenation*/
+$pagination-color:#535353;
+$pagination-active-color:#fff;
+$pagination-active-bg:#e9a936;
+
+/*overlay sidebar*/
+$sidebar-b-color:#f2f2f2;
+$input-b-clr:#e5e5e5;
+
+
+
+/**ngx data table variables**/
+$datatableheader-b-bdr:#f2f2f2;
+$datatableheader-f-size:12px;
+$datatableheader-tr-hover:#fafafa;
+
+
+/**no data found**/
+$nodatafound-w:320px;
+
+/**order edit form*/
+$border-clr:#f2f2f2;
+$listhover:#fdfdfd;
+$lightgray:#b9b9b9;
+
+/**table**/
+$theadbg:#fbf2e1;
+
+

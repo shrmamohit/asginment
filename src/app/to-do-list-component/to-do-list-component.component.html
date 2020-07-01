@@ -1,0 +1,21 @@
+<button type="button" (click)='addTask()'>add Task</button>
+<a routerLink="/doneTask">Done Task</a>
+<h3>All Tasks</h3>
+<div class="card-body table-responsive">
+    <table class="table table-hover">
+        <thead>
+            <th>#</th>
+            <th>Task Name</th>
+            <th>Description</th>
+            <th>Repeating Task</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let task of tasks">
+                <td> <input type="checkbox" (click)='isDoneFn(task)' [(ngModel)]='task.isDone'> </td>
+                <td> {{task.task_name}}</td>
+                <td> {{task.descrption}}</td>
+                <td> {{task.repeating_task}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

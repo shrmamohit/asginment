@@ -1,0 +1,17 @@
+.breadcrumb{
+    &.custom-breadcrumb{
+        font-size:$meduim-font;
+        a{
+            text-decoration: none;
+        }
+
+        .breadcrumb-item{
+            + .breadcrumb-item {
+                &::before {
+                    content:"❯";
+                    font-weight: $font-weight-strong;
+                }
+            }
+        }
+    }
+}

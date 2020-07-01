@@ -1,0 +1,55 @@
+<div class="modal-dialog">
+    <div class="modal-content">
+        <div class="modal-body">
+            <div class="card">
+                <div class="card-header card-header-primary text-center">
+                    <h4 class="card-title">Add Task</h4>
+
+                </div>
+                <div class="card-body">
+
+                    <form [formGroup]="projectForm">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label class="bmd-label-floating">Task Name</label>
+                                    <input formControlName="task_name" type="text" class="form-control">
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label class="bmd-label-floating">Description</label>
+                                    <input formControlName="descrption" type="text" class="form-control">
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label class="bmd-label-floating">Repeating task</label>
+                                    <select formControlName="repeating_task" class="form-control">
+                                        <option>Y</option>
+                                        <option>N</option>
+                                    </select>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- <button [disabled]="projectForm.invalid || isLoading" (click)='save()' type=""
+                            class="btn btn-success pull-right">Save</button> -->
+                        <button (click)='close()' type="" class="btn btn-danger pull-right"
+                            data-dismiss="modal">Cancel</button>
+                        <div class="clearfix"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

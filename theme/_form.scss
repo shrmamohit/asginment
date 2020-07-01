@@ -1,0 +1,254 @@
+/**globaly form**/
+textarea:hover, 
+input:hover, 
+textarea:active, 
+input:active, 
+textarea:focus, 
+input:focus,
+button:focus,
+button:active,
+button:hover,
+label:focus,
+.btn:active,
+.btn.active
+{
+    outline:0px !important;
+    -webkit-appearance:none !important;    
+    box-shadow: none !important;
+}
+.custom-form{
+	.form-group{
+        margin-bottom:15px;
+       &.h-70{
+        height:70px;
+       }
+       label{
+           @extend .text-dark;
+       }
+	}
+	.form-control{
+		height:calc(2.3rem + 2px);
+        border-radius: 0.25rem !important;
+        border:1px solid $input-b-clr;        
+		&:focus, &:visited{
+			box-shadow: none;
+			outline: none;
+			border-color:$primary;
+        }
+        &.icon-space{
+            padding-right:30px;
+        }
+        &.is-valid, &.is-invalid {
+            background-position: 97%;
+        }
+        .was-validated {
+            .form-control {
+                &:valid, &:invalid {
+                    background-position: 97%;
+                }
+            }
+        }
+      &.textarea-h{
+          height:80px;
+          resize: none;
+      }  
+	}
+	&.form-width{
+		width:100%;
+		max-width:600px;
+    }
+    label{
+        @extend .text-dark;
+    }
+
+    input:focus, input:active, input:hover{}
+}
+
+.auth-form-icon{
+    position: absolute;
+    right:3px;
+    top:3px;
+    z-index: 9;
+    width:$formiconwidth;
+    height:$formiconheight;
+    color:$formicon;
+    font-size:17px;
+    @extend .d-flex;
+    @extend .justify-content-center;
+    @extend .align-items-center;
+}
+
+
+/**input file remove box-shadow**/
+.custom-file-input {
+	&:focus~.custom-file-label {
+        box-shadow: $form-file-focus-box-shadow;
+        border-color:$form-file-focus-border-color;
+	}
+}
+
+.no-record-found{
+    height: 190px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:24px;
+
+}
+
+/**sorting**/
+.sorting{
+    &.form-group{
+        margin-bottom:0;
+        @extend .d-flex;
+        @extend .align-items-center;
+        .control-label{
+            font-weight:$font-weight-strong;
+            white-space: nowrap;        
+        }
+        .form-control{
+            padding:5px;
+            font-size:13px;
+            margin-left:5px;
+            &:focus{
+                box-shadow: none;              
+                outline: none;
+            }
+            input:focus, input:active, input:hover{}
+        }
+    }
+}
+
+/***search expand css***/
+
+.searchBox {	
+    // background:rgba($gray-700, 0.8);
+    background:$white;
+	height: 35px;
+    // border-radius: 20px; 
+    border-radius: 0.25em; 
+    border:1px solid #dee2e6;
+    width: 180px;  
+	@extend .d-flex;
+    @extend .align-items-center;
+    @media screen and (min-width:320px) and (max-width:575px){
+        margin-top:10px;	
+        width:100%;
+    }
+    input:focus, input:active, input:hover{}
+}
+.searchButton {
+	color:rgba($gray-700, 0.3);
+	float: right;
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+	background: transparent;
+	@extend .d-flex;
+	@extend .justify-content-center;
+	@extend .align-items-center;
+	transition: 0.4s;
+	@extend .border-0;
+}
+.searchInput {
+	border: none;
+	background: none;
+	outline: none;;
+	padding: 0 0 0 10px;
+	color: $gray-700;
+	font-size: 95%;
+	transition: 0.4s;
+    line-height: 40px;
+    width: 100%;
+    &::placeholder{
+        color:rgba($gray-700, 0.5);
+    }  
+         
+}
+
+
+/***input***/
+
+
+.create-form{
+	.form-inner-con{
+        margin-top:10px;              
+       label{
+        color:#9e9e9e;
+        font-size:13px;
+        margin-bottom:8px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 100%;
+        display: inline-block;
+        vertical-align: middle;
+        text-transform: capitalize;
+        &.no-flex{
+            display: inherit;
+        }
+        span{          
+            margin-left:2px;
+            color:$red;
+        }
+       }
+	}
+	.custom-input{
+		height:calc(2.3rem + 0px);
+        border-radius: 0.25em !important;   
+        width:100%;
+        border:1px solid #e6e6e6;
+        padding:10px;
+        transition:all 0.5s;
+        color:#535353;
+        font-size:12px;
+        
+		&:focus, &:visited, &:active, &:hover{
+			box-shadow: none;
+			outline: none;
+            border-color:$primary;
+                  
+        }
+      &.textarea-height{
+          height:90px;
+          resize: none;
+      }  
+
+     
+	}   
+}
+
+.custom-radio{
+    .custom-control-label{
+        font-size:13px;
+        color:#9e9e9e;
+        margin-bottom:8px;
+        
+    }
+}
+
+
+/**custom timing form**/
+
+.timing-box{
+    font-size:12px;
+    border:1px solid #e6e6e6;
+    border-radius: 0.25rem;
+    padding:10px;
+    height:calc(2.3rem + 0px);
+    @extend .d-flex;
+    @extend .align-items-center;
+    transition:all 0.5s;    
+    &:focus, &:visited, &:active, &:hover{
+        border-color:$primary;
+       
+    }
+    &.time{
+        background:url(assets/img/time.svg) no-repeat  96% 9px;
+        background-size: 18px;
+        
+    }
+}
+
+
+  

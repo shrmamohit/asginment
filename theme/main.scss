@@ -1,0 +1,217 @@
+/**
+Application base files
+**/
+@import "bootstrap";
+@import "fonts";
+@import "text";
+@import "breadcrumb";
+@import "footer";
+
+.text-black {
+  color: $black;
+}
+.invalid-feedback-form {
+  color: $red;
+}
+
+/**client sidebar customize**/
+.sidebar {
+  min-width: 200px;
+  max-width: 200px;
+  // height:calc(100vh - 0px);
+  height: 100%;
+  position: static;
+  display: none !important;
+  flex-flow: column;
+  justify-content: flex-start;
+  background: linear-gradient(360deg, #424242, #535353) !important;
+  transition: all 0.5s;
+  @media screen and (min-width: 320px) and (max-width: 991px) {
+    min-width: 80px;
+    max-width: 80px;
+  }
+
+  .navigation {
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+      li {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+        &:last-child {
+          border-bottom: none;
+        }
+        &.active {
+          a {
+            background: $primary;
+          }
+        }
+        a {
+          //  @extend .justify-content-center;
+          //  @extend .align-items-center;
+          //  @extend .d-flex;
+          display: block;
+          font-size: $sidebar-menu-icon-size;
+          padding: 15px;
+          @extend .w-100;
+          color: $white;
+          font-size: 15px;
+          transition: all 0.5s;
+          text-decoration: none;
+          justify-content: left !important;
+          @media screen and (min-width: 320px) and (max-width: 991px) {
+            text-align: center;
+          }
+          &:hover {
+            background: $primary;
+          }
+          .sidebarIcon {
+            margin-right: 10px;
+            width: 17px;
+            display: inline-block;
+            @media screen and (min-width: 320px) and (max-width: 991px) {
+              width: 50%;
+              margin: 0;
+            }
+            img {
+              max-width: 100%;
+              position: relative;
+              margin-top: -1px;
+            }
+          }
+
+          .sidebarTxt {
+            display: inline-block;
+            @media screen and (min-width: 320px) and (max-width: 991px) {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+  .sidebar-header,
+  .sidebar-footer {
+    @extend .w-100;
+    @extend .d-flex;
+    @extend .align-items-center;
+    @extend .justify-content-center;
+    padding: 15px;
+    height: 80px;
+    color: $primary;
+    font-size: $logo-font-size;
+    font-weight: $font-weight-bold;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  }
+
+  .sidebar-footer {
+    border-bottom: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    justify-content: space-between !important;
+    align-items: center !important;
+    padding: 10px;
+    transition: all 0.5s;
+    @media screen and (min-width: 320px) and (max-width: 991px) {
+      justify-content: center !important;
+      height: 110px;
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
+    .profile-pic {
+      @media screen and (min-width: 320px) and (max-width: 991px) {
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+  .sidebar-body {
+    height: calc(100vh - 160px);
+    overflow-x: hidden;
+    overflow-x: auto;
+    @media screen and (min-width: 320px) and (max-width: 991px) {
+      height: calc(100vh - 190px);
+    }
+  }
+}
+
+.show-sidebar {
+  .sidebar {
+    display: flex !important;
+  }
+}
+
+/**client sidebar customize**/
+
+.profile-outer {
+  @extend .d-flex;
+  @extend .align-items-center;
+  width: 100%;
+  cursor: pointer;
+}
+.profile-txt {
+  width: 118px;
+  font-size: 14px;
+  text-align: left;
+  padding-left: 9px;
+  @media screen and (min-width: 320px) and (max-width: 991px) {
+    display: none;
+  }
+
+  .username {
+    color: $primary;
+    font-size: 0.825rem;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin: 0;
+  }
+  .user-info {
+    font-weight: normal;
+    color: #8e8e8e;
+    font-size: 12px;
+    padding: 0;
+    margin: 0;
+    border: none;
+    text-align: left;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+}
+
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+.series .collapsible {
+  background-color: #d5c1c1;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+.active,
+.collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}

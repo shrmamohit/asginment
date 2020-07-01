@@ -1,0 +1,56 @@
+
+.text-dark{
+    color:$gray-700 !important;
+}
+
+.text-white{
+    color:$white !important;
+}
+
+.text-primary{
+    color:$primary;
+}
+
+.small-text{
+    font-size:$small-font;
+}
+
+.font17{
+    font-size:17px;
+}
+
+.font16{
+    font-size:16px;
+    font-weight:$font-weight-bold;  
+}
+
+.font-13{
+    font-size:0.8125rem;    
+}
+
+.font-11{
+    font-size:11px;    
+}
+
+
+.text-muted{
+    color:$nobel !important;
+}
+
+.price-text{
+    font-size:$price-fontsize;
+    font-weight:$font-weight-bold;  
+    position: relative;
+}
+
+.deadline{
+    font-weight:$font-weight-strong;
+}
+
+.text-green{
+    color:$success !important;
+}
+
+.text-red{
+    color:$danger !important;
+}
